@@ -5,16 +5,22 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ContatoComponent } from './views/contato/contato.component';
 import { HomeComponent } from './views/home/home.component';
+import { FormularioComponent } from './views/formulario/formulario.component';
+import { FormsModule } from '@angular/forms';
+import { HeaderComponent } from './views/header/header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ContatoComponent,
-    HomeComponent
+    HomeComponent,
+    FormularioComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
